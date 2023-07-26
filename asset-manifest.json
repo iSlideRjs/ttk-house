@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ttk-house/static/css/main.e6c13ad2.css",
+    "main.js": "/ttk-house/static/js/main.4f9d04fc.js",
+    "index.html": "/ttk-house/index.html",
+    "main.e6c13ad2.css.map": "/ttk-house/static/css/main.e6c13ad2.css.map",
+    "main.4f9d04fc.js.map": "/ttk-house/static/js/main.4f9d04fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4f9d04fc.js"
+  ]
+}
