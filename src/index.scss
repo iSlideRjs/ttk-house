@@ -1,5 +1,13 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  text-align: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,4 +19,14 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.head {
+  text-align: center;
+  width: 1168px;
+  height: 96px;
+  border: 0px solid black;
+  background-color: #f8e218;
+  margin: 5px;
+  clip-path: polygon(0% 0%, 100% 0%, 99% 75%, 2% 100%);
 }
