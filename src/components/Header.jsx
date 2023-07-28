@@ -4,18 +4,19 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
   return (
-    <Navbar bg="warning" data-bs-theme="light">
+    <Navbar className="head" bg="warning" data-bs-theme="light">
       <Container>
-        <Navbar.Brand href="#home">TTK House</Navbar.Brand>
-        <Nav className="me-auto">
+        <Navbar.Brand className="ms-2 logo" href="#home">
+          TTK House
+        </Navbar.Brand>
+        <Nav className="ms-auto me-2">
           <Nav.Link href="#home">Главная</Nav.Link>
-          <Nav.Link href="#features">Что я?</Nav.Link>
+          <Nav.Link href="#features">Ответы</Nav.Link>
           <Nav.Link href="#pricing">Контакты</Nav.Link>
         </Nav>
       </Container>
     </Navbar>
   );
-  // return <div className="head">TTK House</div>;
 }
 
 export { Header };
