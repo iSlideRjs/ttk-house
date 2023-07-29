@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  background: #1d2532;
+  background-color: var(--bs-body-bg);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -32,4 +32,8 @@ code {
 .logo {
   font-family: 'Alfa Slab One', cursive;
   font-size: 30px;
+}
+
+.nav-header {
+  font-weight: bold;
 }
