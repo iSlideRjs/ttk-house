@@ -10,7 +10,6 @@
 
 body {
   margin: 0;
-  background-color: var(--bs-body-bg);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -25,7 +24,6 @@ code {
 
 .head {
   height: 100px;
-  margin-top: 20px;
   clip-path: polygon(0% 0%, 100% 0%, 99% 75%, 2% 100%);
 }
 
@@ -36,4 +34,9 @@ code {
 
 .nav-header {
   font-weight: bold;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: var(--bs-body-bg);
 }

@@ -1,12 +1,19 @@
 import React from 'react';
+import { useState } from 'react';
 import { Header } from './components/Header';
 import Container from 'react-bootstrap/Container';
 
 function App() {
+  const [theme, setTheme] = useState('dark');
+
+  const changeTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
   return (
-    <div className="App">
+    <div className="App" data-bs-theme={theme}>
       <Container>
-        <Header />
+        <Header theme={theme} changeTheme={changeTheme} />
       </Container>
     </div>
   );
