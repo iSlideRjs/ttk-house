@@ -1,13 +1,15 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import house from '../icon/house.svg';
 
 function Header({ changeTheme, theme }) {
   return (
     <Navbar className="head bg-warning bg-gradient">
       <Container>
-        <Navbar.Brand className="ms-2 logo" href="#home">
-          TTK House
+        <Navbar.Brand className="ms-2 logo d-flex align-items-end" href="#home">
+          <img alt="TTK House" src={house} width="50" height="50" />{' '}
+          <span className="ms-2 logoText">TTK House</span>
         </Navbar.Brand>
         <Nav className="ms-auto me-2 nav-header">
           <Nav.Link href="#home">Главная</Nav.Link>{' '}

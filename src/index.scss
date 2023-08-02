@@ -30,6 +30,10 @@ code {
 .logo {
   font-family: 'Alfa Slab One', cursive;
   font-size: 30px;
+  &Text {
+    color: black;
+    text-shadow: 0px 2px 3px #000000bd;
+  }
 }
 
 .nav-header {
@@ -46,12 +50,11 @@ code {
   display: inline-block;
   width: 55px;
   height: 20px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  & input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 }
 
 .slider {
@@ -62,50 +65,43 @@ code {
   right: 0;
   bottom: 0;
   background-color: #343a40;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: '';
-  height: 30px;
-  width: 30px;
-  left: -1px;
-  bottom: 4px;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
-  box-shadow: 0 0px 15px #2020203d;
-  background: white url('../src/icon/night.png');
-  background-repeat: no-repeat;
-  background-position: center;
+  &:before {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    left: -1px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    transition: 0.2s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('../src/icon/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.round {
+    border-radius: 34px;
+    &:before {
+      border-radius: 50%;
+    }
+  }
 }
 
-input:checked + .slider {
-  background-color: #ec9e0c;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #ec9e0c;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-  background: white url('../src/icon/sunny.png');
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
+input {
+  &:checked + .slider {
+    background-color: #ec9e0c;
+  }
+  &:focus + .slider {
+    box-shadow: 0 0 1px #ec9e0c;
+  }
+  &:checked + .slider::before {
+    transform: translateX(26px);
+    background: white url('../src/icon/sunny.png');
+    background-size: 83%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
