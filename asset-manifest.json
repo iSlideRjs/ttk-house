@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/ttk-house/static/css/main.11c3d01d.css",
-    "main.js": "/ttk-house/static/js/main.953d0624.js",
+    "main.css": "/ttk-house/static/css/main.e8b23d16.css",
+    "main.js": "/ttk-house/static/js/main.ee6575db.js",
     "static/media/house.svg": "/ttk-house/static/media/house.f6789b76ab06b9b53f060218b779c343.svg",
     "index.html": "/ttk-house/index.html",
-    "main.11c3d01d.css.map": "/ttk-house/static/css/main.11c3d01d.css.map",
-    "main.953d0624.js.map": "/ttk-house/static/js/main.953d0624.js.map"
+    "static/media/sidebar.svg": "/ttk-house/static/media/sidebar.93e21d9adcd257686f7c18fd4f6c487f.svg",
+    "main.e8b23d16.css.map": "/ttk-house/static/css/main.e8b23d16.css.map",
+    "main.ee6575db.js.map": "/ttk-house/static/js/main.ee6575db.js.map"
   },
   "entrypoints": [
-    "static/css/main.11c3d01d.css",
-    "static/js/main.953d0624.js"
+    "static/css/main.e8b23d16.css",
+    "static/js/main.ee6575db.js"
   ]
 }
