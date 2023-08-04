@@ -100,7 +100,7 @@ input {
   &:checked + .slider::before {
     transform: translateX(26px);
     background: white url('../src/icon/sunny.png');
-    background-size: 83%;
+    background-size: 87%;
     background-repeat: no-repeat;
     background-position: center;
   }
