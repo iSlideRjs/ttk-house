@@ -15,7 +15,7 @@ function Header({ changeTheme, theme }) {
     <Navbar className="head bg-warning bg-gradient">
       <Container>
         <Navbar.Brand className="ms-2 logo d-flex align-items-end" href="#home">
-          <img alt="TTK House" src={house} width="50" height="50" />{' '}
+          <img alt="TTK House" src={house} width="50px" height="50px" />{' '}
           <span className="ms-2 logoText">TTK House</span>
         </Navbar.Brand>
         <Nav className="ms-auto me-2 nav-header">
@@ -27,7 +27,7 @@ function Header({ changeTheme, theme }) {
           width="40"
           height="40"
           onClick={handleShow}
-          className="me-2"
+          className="me-1 sidebar"
         />
         <Offcanvas
           data-bs-theme={theme}
@@ -41,7 +41,12 @@ function Header({ changeTheme, theme }) {
           <Offcanvas.Body>
             Смена темы:{' '}
             <label id="switch" className="switch">
-              <input type="checkbox" onChange={changeTheme} id="slider" />
+              <input
+                type="checkbox"
+                onChange={changeTheme}
+                id="slider"
+                checked={theme === 'light'}
+              />
               <span class="slider round"></span>
             </label>
           </Offcanvas.Body>

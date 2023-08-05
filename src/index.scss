@@ -71,7 +71,7 @@ code {
     content: '';
     height: 30px;
     width: 30px;
-    left: -1px;
+    left: 0px;
     bottom: 4px;
     top: 0;
     bottom: 0;
@@ -94,14 +94,20 @@ input {
   &:checked + .slider {
     background-color: #ec9e0c;
   }
-  &:focus + .slider {
-    box-shadow: 0 0 1px #ec9e0c;
-  }
+
   &:checked + .slider::before {
     transform: translateX(26px);
     background: white url('../src/icon/sunny.png');
-    background-size: 87%;
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+.sidebar {
+  opacity: 0.6;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
   }
 }
