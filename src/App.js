@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Header } from './components/Header';
 import { Slider } from './components/Slider';
+import { Body } from './components/Body';
 import Container from 'react-bootstrap/Container';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Container>
         <Header theme={theme} changeTheme={changeTheme} />
         <Slider />
+        <Body />
       </Container>
     </div>
   );

@@ -14,7 +14,7 @@ function Header({ changeTheme, theme }) {
   return (
     <Navbar className="head bg-warning bg-gradient">
       <Container>
-        <Navbar.Brand className="ms-2 logo d-flex align-items-end" href="#home">
+        <Navbar.Brand className="ms-2 logo d-flex" href="#home">
           <img alt="TTK House" src={house} width="50px" height="50px" />{' '}
           <span className="ms-2 logoText">TTK House</span>
         </Navbar.Brand>
