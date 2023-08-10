@@ -18,8 +18,17 @@ function Header({ changeTheme, theme }) {
           <img alt="TTK House" src={house} width="50px" height="50px" />{' '}
           <span className="ms-2 logoText">TTK House</span>
         </Navbar.Brand>
-        <Nav className="ms-auto me-2 nav-header">
+        <Nav className="ms-auto me-1 nav-header">
           <Nav.Link href="#home"></Nav.Link>{' '}
+          <label id="switch" className="switch">
+            <input
+              type="checkbox"
+              onChange={changeTheme}
+              id="slider"
+              checked={theme === 'light'}
+            />
+            <span class="slider round"></span>
+          </label>
         </Nav>
         <img
           alt="sidebar"
