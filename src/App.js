@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Header } from './components/Header';
 import { Slider } from './components/Slider';
 import { Body } from './components/Body';
+import { Footer } from './components/Footer';
 import Container from 'react-bootstrap/Container';
 import { useEffect } from 'react';
 
@@ -23,6 +24,7 @@ function App() {
         <Header theme={theme} changeTheme={changeTheme} />
         <Slider />
         <Body />
+        <Footer />
       </Container>
     </div>
   );

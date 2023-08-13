@@ -38,12 +38,7 @@ function Header({ changeTheme, theme }) {
           onClick={handleShow}
           className="me-1 sidebar"
         />
-        <Offcanvas
-          data-bs-theme={theme}
-          placement="end"
-          show={show}
-          onHide={handleClose}
-        >
+        <Offcanvas placement="end" show={show} onHide={handleClose}>
           <Offcanvas.Header closeButton>
             <Offcanvas.Title>Меню</Offcanvas.Title>
           </Offcanvas.Header>
