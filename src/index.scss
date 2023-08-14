@@ -129,3 +129,17 @@ input {
     display: none;
   }
 }
+
+.picture {
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+
+.social {
+  text-decoration: none;
+  color: $warning;
+  margin: 2px;
+  &:hover {
+    color: #f0d29b;
+    border-right: 1px solid #db9c12;
+  }
+}
