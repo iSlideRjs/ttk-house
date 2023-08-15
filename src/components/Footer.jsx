@@ -1,11 +1,15 @@
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
+import phone from '../icon/phone.svg';
 
 function Footer() {
   return (
     <div className="block2 d-flex justify-content-center align-items-center">
-      <Card border="warning" style={{ width: '15rem' }}>
-        <Card.Header>Связь с нами</Card.Header>
+      <Card border="0" style={{ width: '15rem' }}>
+        <Card.Header>
+          <img src={phone} alt="phone" width="25px" height="25px" /> Связь с
+          нами
+        </Card.Header>
         <Card.Body>
           <Card.Text>
             {' '}

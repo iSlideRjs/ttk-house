@@ -5,6 +5,7 @@ import house from '../icon/house.svg';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useState } from 'react';
 import sidebar from '../icon/sidebar.svg';
+import phone from '../icon/phone.svg';
 
 function Header({ changeTheme, theme }) {
   const [show, setShow] = useState(false);
@@ -19,7 +20,16 @@ function Header({ changeTheme, theme }) {
           <span className="ms-2 logoText">TTK House</span>
         </Navbar.Brand>
         <Nav className="ms-auto me-1 nav-header">
-          <Nav.Link href="#home"></Nav.Link>{' '}
+          <img
+            className="me-1"
+            src={phone}
+            alt="phone"
+            width="25px"
+            height="25px"
+          />
+          <span style={{ color: 'black' }} className="me-2">
+            Контакты
+          </span>
           <label id="switch" className="switch">
             <input
               type="checkbox"
@@ -38,8 +48,13 @@ function Header({ changeTheme, theme }) {
           onClick={handleShow}
           className="me-1 sidebar"
         />
-        <Offcanvas placement="end" show={show} onHide={handleClose}>
-          <Offcanvas.Header closeButton>
+        <Offcanvas
+          placement="bottom"
+          className="rounded-top-4"
+          show={show}
+          onHide={handleClose}
+        >
+          <Offcanvas.Header className="border-bottom" closeButton>
             <Offcanvas.Title>Меню</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
@@ -53,6 +68,15 @@ function Header({ changeTheme, theme }) {
               />
               <span class="slider round"></span>
             </label>
+            <br /> <br />
+            <img
+              className="me-2"
+              src={phone}
+              alt="phone"
+              width="25px"
+              height="25px"
+            />
+            <span className="">Контакты</span>
           </Offcanvas.Body>
         </Offcanvas>
       </Container>

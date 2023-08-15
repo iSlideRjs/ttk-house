@@ -136,10 +136,14 @@ input {
 
 .social {
   text-decoration: none;
-  color: $warning;
+  color: #a7a7a7;
   margin: 2px;
   &:hover {
-    color: #f0d29b;
+    color: #ffffff;
     border-right: 1px solid #db9c12;
   }
+}
+
+.carousel-indicators {
+  bottom: 4%;
 }
