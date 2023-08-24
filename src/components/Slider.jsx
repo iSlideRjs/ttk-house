@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Slider() {
   return (
-    <Carousel className="mt-4 ms-2 me-2 mb-4 picture">
+    <Carousel className="mt-5 ms-2 me-2 mb-5 picture">
       <Carousel.Item>
         <img
           className="d-block w-100"

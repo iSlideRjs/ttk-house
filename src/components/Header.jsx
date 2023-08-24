@@ -54,10 +54,10 @@ function Header({ changeTheme, theme }) {
           show={show}
           onHide={handleClose}
         >
-          <Offcanvas.Header className="border-bottom" closeButton>
+          <Offcanvas.Header className="border-bottom menu">
             <Offcanvas.Title>Меню</Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body>
+          <Offcanvas.Body className="mt-3">
             Смена темы:{' '}
             <label id="switch" className="switch">
               <input
