@@ -27,7 +27,7 @@ function Header({ changeTheme, theme }) {
             width="25px"
             height="25px"
           />
-          <span style={{ color: 'black' }} className="me-2">
+          <span style={{ color: 'black' }} className="me-3">
             Контакты
           </span>
           <label id="switch" className="switch">
@@ -54,7 +54,7 @@ function Header({ changeTheme, theme }) {
           show={show}
           onHide={handleClose}
         >
-          <Offcanvas.Header className="border-bottom menu">
+          <Offcanvas.Header className="border-bottom headerMenu">
             <Offcanvas.Title>Меню</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className="mt-3">

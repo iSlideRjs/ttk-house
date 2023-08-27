@@ -107,18 +107,18 @@ input {
   }
 }
 
-.block {
+.info-block {
   width: 100%;
-  height: 600px;
-  padding: 50px 0 50px 0;
+  height: max-content;
+  padding: 20px 0 50px 0;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-  &2 {
+  &-contacts {
     width: 100%;
-    height: 600px;
-    padding: 50px 0 50px 0;
+    height: max-content;
+    padding: 60px 0 20px 0;
     background-color: #262c33;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
-    margin-top: -60px;
+    margin-top: 0px;
     margin-bottom: 5px;
   }
 }
@@ -132,10 +132,6 @@ input {
   }
 }
 
-// .picture {
-//   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
-// }
-
 .social {
   text-decoration: none;
   color: #a7a7a7;
@@ -146,11 +142,13 @@ input {
   }
 }
 
-.menu {
+.headerMenu {
   width: 95%;
   margin: 0 auto;
 }
 
-// .carousel-indicators {
-//   bottom: 4%;
-// }
+.cardHeader {
+  width: 95%;
+  margin: 0 auto;
+  background: #ffffff00;
+}
