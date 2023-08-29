@@ -30,7 +30,7 @@ function Header({ changeTheme, theme }) {
           <span style={{ color: 'black' }} className="me-3">
             Контакты
           </span>
-          <label id="switch" className="switch">
+          <label id="switch" className="switch me-1">
             <input
               type="checkbox"
               onChange={changeTheme}
@@ -54,7 +54,7 @@ function Header({ changeTheme, theme }) {
           show={show}
           onHide={handleClose}
         >
-          <Offcanvas.Header className="border-bottom headerMenu">
+          <Offcanvas.Header className="border-bottom headerMenu" closeButton>
             <Offcanvas.Title>Меню</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body className="mt-3">

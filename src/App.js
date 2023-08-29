@@ -6,6 +6,7 @@ import { Body } from './components/Body';
 import { Contacts } from './components/Contacts';
 import Container from 'react-bootstrap/Container';
 import { useEffect } from 'react';
+import { Footer } from './components/Footer';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -25,6 +26,7 @@ function App() {
         <Slider />
         <Body />
         <Contacts />
+        <Footer />
       </Container>
     </div>
   );

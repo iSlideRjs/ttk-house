@@ -109,17 +109,17 @@ input {
 
 .info-block {
   width: 100%;
-  height: max-content;
+  height: 420px;
   padding: 20px 0 50px 0;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   &-contacts {
     width: 100%;
-    height: max-content;
+    height: 420px;
     padding: 60px 0 20px 0;
     background-color: #262c33;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
 }
 
@@ -151,4 +151,14 @@ input {
   width: 95%;
   margin: 0 auto;
   background: #ffffff00;
+}
+
+.copyright {
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  margin: -1px 0 10px 0;
+  padding: 10px 0 10px 0;
+  background-color: #323c49;
+  color: #ffffff;
 }
