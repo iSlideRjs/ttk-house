@@ -13,53 +13,25 @@ function Header({ changeTheme, theme }) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <Navbar className="head bg-warning bg-gradient">
-      <Container>
-        <Navbar.Brand className="ms-2 logo d-flex" href="#home">
-          <img alt="TTK House" src={house} width="50px" height="50px" />{' '}
-          <span className="ms-2 logoText">TTK House</span>
-        </Navbar.Brand>
-        <Nav className="ms-auto me-1 nav-header">
-          <img
-            className="me-1"
-            src={phone}
-            alt="phone"
-            width="25px"
-            height="25px"
-          />
-          <span style={{ color: 'black' }} className="me-3">
-            Контакты
-          </span>
-          <label id="switch" className="switch me-1">
-            <input
-              type="checkbox"
-              onChange={changeTheme}
-              id="slider"
-              checked={theme === 'light'}
+    <div className="headShadow">
+      <Navbar className="head bg-warning bg-gradient">
+        <Container>
+          <Navbar.Brand className="ms-2 logo d-flex" href="#home">
+            <img alt="TTK House" src={house} width="50px" height="50px" />{' '}
+            <span className="ms-2 logoText">TTK House</span>
+          </Navbar.Brand>
+          <Nav className="ms-auto me-1 nav-header">
+            <img
+              className="me-1"
+              src={phone}
+              alt="phone"
+              width="25px"
+              height="25px"
             />
-            <span class="slider round"></span>
-          </label>
-        </Nav>
-        <img
-          alt="sidebar"
-          src={sidebar}
-          width="40"
-          height="40"
-          onClick={handleShow}
-          className="me-1 sidebar"
-        />
-        <Offcanvas
-          placement="bottom"
-          className="rounded-top-4"
-          show={show}
-          onHide={handleClose}
-        >
-          <Offcanvas.Header className="border-bottom headerMenu" closeButton>
-            <Offcanvas.Title>Меню</Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body className="mt-3">
-            Смена темы:{' '}
-            <label id="switch" className="switch">
+            <span style={{ color: 'black' }} className="me-3">
+              Контакты
+            </span>
+            <label id="switch" className="switch me-1">
               <input
                 type="checkbox"
                 onChange={changeTheme}
@@ -68,19 +40,49 @@ function Header({ changeTheme, theme }) {
               />
               <span class="slider round"></span>
             </label>
-            <br /> <br />
-            <img
-              className="me-2"
-              src={phone}
-              alt="phone"
-              width="25px"
-              height="25px"
-            />
-            <span className="">Контакты</span>
-          </Offcanvas.Body>
-        </Offcanvas>
-      </Container>
-    </Navbar>
+          </Nav>
+          <img
+            alt="sidebar"
+            src={sidebar}
+            width="40"
+            height="40"
+            onClick={handleShow}
+            className="me-1 sidebar"
+          />
+          <Offcanvas
+            placement="bottom"
+            className="rounded-top-4"
+            show={show}
+            onHide={handleClose}
+          >
+            <Offcanvas.Header className="border-bottom headerMenu" closeButton>
+              <Offcanvas.Title>Меню</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body className="mt-3">
+              Смена темы:{' '}
+              <label id="switch" className="switch">
+                <input
+                  type="checkbox"
+                  onChange={changeTheme}
+                  id="slider"
+                  checked={theme === 'light'}
+                />
+                <span class="slider round"></span>
+              </label>
+              <br /> <br />
+              <img
+                className="me-2"
+                src={phone}
+                alt="phone"
+                width="25px"
+                height="25px"
+              />
+              <span className="">Контакты</span>
+            </Offcanvas.Body>
+          </Offcanvas>
+        </Container>
+      </Navbar>
+    </div>
   );
 }
 

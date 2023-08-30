@@ -7,89 +7,127 @@ import vk from '../icon/vk.svg';
 
 function Contacts() {
   return (
-    <div className="info-block-contacts d-flex justify-content-center align-items-center flex-wrap">
-      <Card className="m-2" border="0" style={{ width: '15rem' }}>
-        <Card.Header className="cardHeader fw-medium">
-          <img src={phone} alt="phone" width="25px" height="25px" /> Связь с
-          нами
-        </Card.Header>
-        <Card.Body>
-          <Card.Text>
-            {' '}
-            <Nav className="flex-column">
-              <a
-                className="social"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://vk.com"
-              >
-                <img src={vk} alt="phone" width="20px" height="20px" />{' '}
-                VKontakte
-              </a>
+    <div className="info-block-contactsShadow">
+      <div className="info-block-contacts d-flex justify-content-center align-items-center flex-wrap">
+        <Card className="m-2" border="0" style={{ width: '15rem' }}>
+          <Card.Header className="cardHeader fw-medium">
+            <img src={phone} alt="phone" width="25px" height="25px" /> Связь с
+            нами
+          </Card.Header>
+          <Card.Body>
+            <Card.Text>
+              {' '}
+              <Nav className="flex-column">
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vk.com"
+                >
+                  <img src={vk} alt="phone" width="20px" height="20px" />{' '}
+                  VKontakte
+                </a>
 
-              <a
-                className="social"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://vk.com"
-              >
-                <img src={teleg} alt="phone" width="20px" height="20px" />{' '}
-                Telegram
-              </a>
-              <a
-                className="social"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://vk.com"
-              >
-                <img src={insta} alt="phone" width="20px" height="20px" />{' '}
-                Instagram
-              </a>
-            </Nav>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-      <Card className="m-2" border="0" style={{ width: '15rem' }}>
-        <Card.Header className="cardHeader fw-medium">
-          <img src={phone} alt="phone" width="25px" height="25px" /> Связь с
-          нами
-        </Card.Header>
-        <Card.Body>
-          <Card.Text>
-            {' '}
-            <Nav className="flex-column">
-              <a
-                className="social"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://vk.com"
-              >
-                <img src={vk} alt="phone" width="20px" height="20px" />{' '}
-                VKontakte
-              </a>
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vk.com"
+                >
+                  <img src={teleg} alt="phone" width="20px" height="20px" />{' '}
+                  Telegram
+                </a>
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vk.com"
+                >
+                  <img src={insta} alt="phone" width="20px" height="20px" />{' '}
+                  Instagram
+                </a>
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vk.com"
+                >
+                  <img src={phone} alt="phone" width="18px" height="18px" />{' '}
+                  8-999-999-99-99
+                </a>
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vk.com"
+                >
+                  <img src={phone} alt="phone" width="18px" height="18px" />{' '}
+                  ttk@ttk.ru
+                </a>
+              </Nav>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card className="m-2" border="0" style={{ width: '15rem' }}>
+          <Card.Header className="cardHeader fw-medium">
+            <img src={phone} alt="phone" width="25px" height="25px" /> Связь с
+            нами
+          </Card.Header>
+          <Card.Body>
+            <Card.Text>
+              {' '}
+              <Nav className="flex-column">
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vk.com"
+                >
+                  <img src={vk} alt="phone" width="20px" height="20px" />{' '}
+                  VKontakte
+                </a>
 
-              <a
-                className="social"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://vk.com"
-              >
-                <img src={teleg} alt="phone" width="20px" height="20px" />{' '}
-                Telegram
-              </a>
-              <a
-                className="social"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://vk.com"
-              >
-                <img src={insta} alt="phone" width="20px" height="20px" />{' '}
-                Instagram
-              </a>
-            </Nav>
-          </Card.Text>
-        </Card.Body>
-      </Card>
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vk.com"
+                >
+                  <img src={teleg} alt="phone" width="20px" height="20px" />{' '}
+                  Telegram
+                </a>
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vk.com"
+                >
+                  <img src={insta} alt="phone" width="20px" height="20px" />{' '}
+                  Instagram
+                </a>
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vk.com"
+                >
+                  <img src={phone} alt="phone" width="18px" height="18px" />{' '}
+                  8-999-999-99-99
+                </a>
+                <a
+                  className="social"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://vk.com"
+                >
+                  <img src={phone} alt="phone" width="18px" height="18px" />{' '}
+                  ttk@ttk.ru
+                </a>
+              </Nav>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </div>
     </div>
   );
 }
