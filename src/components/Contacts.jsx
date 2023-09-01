@@ -4,6 +4,8 @@ import phone from '../icon/phone.svg';
 import insta from '../icon/insta.svg';
 import teleg from '../icon/teleg.svg';
 import vk from '../icon/vk.svg';
+import phone2 from '../icon/phone2.svg';
+import mail from '../icon/mail.svg';
 
 function Contacts() {
   return (
@@ -50,18 +52,18 @@ function Contacts() {
                   className="social"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://vk.com"
+                  href="tel:+79510827471"
                 >
-                  <img src={phone} alt="phone" width="18px" height="18px" />{' '}
-                  8-999-999-99-99
+                  <img src={phone2} alt="phone" width="20px" height="20px" />{' '}
+                  +7-951-082-74-71
                 </a>
                 <a
                   className="social"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://vk.com"
+                  href="mailto:ttk@ttk.ru"
                 >
-                  <img src={phone} alt="phone" width="18px" height="18px" />{' '}
+                  <img src={mail} alt="phone" width="20px" height="20px" />{' '}
                   ttk@ttk.ru
                 </a>
               </Nav>
@@ -109,18 +111,18 @@ function Contacts() {
                   className="social"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://vk.com"
+                  href="tel:+79510827471"
                 >
-                  <img src={phone} alt="phone" width="18px" height="18px" />{' '}
-                  8-999-999-99-99
+                  <img src={phone2} alt="phone" width="18px" height="18px" />{' '}
+                  +7-951-082-74-71
                 </a>
                 <a
                   className="social"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://vk.com"
+                  href="mailto:ttk@ttk.ru"
                 >
-                  <img src={phone} alt="phone" width="18px" height="18px" />{' '}
+                  <img src={mail} alt="phone" width="20px" height="20px" />{' '}
                   ttk@ttk.ru
                 </a>
               </Nav>

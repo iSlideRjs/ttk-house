@@ -152,8 +152,20 @@ input {
 }
 
 .headerMenu {
+  position: relative;
   width: 95%;
   margin: 0 auto;
+  &::before {
+    content: '';
+    border-radius: 20px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #f1f1f1af;
+  }
 }
 
 .cardHeader {

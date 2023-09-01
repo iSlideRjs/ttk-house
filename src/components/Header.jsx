@@ -55,7 +55,10 @@ function Header({ changeTheme, theme }) {
             show={show}
             onHide={handleClose}
           >
-            <Offcanvas.Header className="border-bottom headerMenu" closeButton>
+            <Offcanvas.Header
+              onClick={handleClose}
+              className="border-bottom headerMenu"
+            >
               <Offcanvas.Title>Меню</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body className="mt-3">
