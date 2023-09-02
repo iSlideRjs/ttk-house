@@ -9,9 +9,17 @@ import phone from '../icon/phone.svg';
 
 function Header({ changeTheme, theme }) {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const handleTouchMove = (event) => {
+    const { clientY } = event.touches[0];
+    const screenHeight = window.innerHeight;
+
+    if (clientY > screenHeight * 0.8) {
+      handleClose();
+    }
+  };
+
   return (
     <div className="headShadow">
       <Navbar className="head bg-warning bg-gradient">
@@ -49,6 +57,7 @@ function Header({ changeTheme, theme }) {
             onClick={handleShow}
             className="me-1 sidebar"
           />
+
           <Offcanvas
             placement="bottom"
             className="rounded-top-4"
@@ -56,8 +65,9 @@ function Header({ changeTheme, theme }) {
             onHide={handleClose}
           >
             <Offcanvas.Header
-              onClick={handleClose}
+              onTouchMove={handleTouchMove}
               className="border-bottom headerMenu"
+              closeButton
             >
               <Offcanvas.Title>Меню</Offcanvas.Title>
             </Offcanvas.Header>
