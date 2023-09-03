@@ -6,8 +6,9 @@ import teleg from '../icon/teleg.svg';
 import vk from '../icon/vk.svg';
 import phone2 from '../icon/phone2.svg';
 import mail from '../icon/mail.svg';
+import classNames from 'classnames';
 
-function Contacts() {
+function Contacts({ theme }) {
   return (
     <div className="info-block-contactsShadow">
       <div className="info-block-contacts d-flex justify-content-center align-items-center flex-wrap">
@@ -21,7 +22,10 @@ function Contacts() {
               {' '}
               <Nav className="flex-column">
                 <a
-                  className="social"
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://vk.com"
@@ -31,7 +35,10 @@ function Contacts() {
                 </a>
 
                 <a
-                  className="social"
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://vk.com"
@@ -40,7 +47,10 @@ function Contacts() {
                   Telegram
                 </a>
                 <a
-                  className="social"
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://vk.com"
@@ -49,7 +59,10 @@ function Contacts() {
                   Instagram
                 </a>
                 <a
-                  className="social"
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="tel:+79510827471"
@@ -58,7 +71,10 @@ function Contacts() {
                   +7-951-082-74-71
                 </a>
                 <a
-                  className="social"
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="mailto:ttk@ttk.ru"
@@ -80,7 +96,10 @@ function Contacts() {
               {' '}
               <Nav className="flex-column">
                 <a
-                  className="social"
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://vk.com"
@@ -90,7 +109,10 @@ function Contacts() {
                 </a>
 
                 <a
-                  className="social"
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://vk.com"
@@ -99,7 +121,10 @@ function Contacts() {
                   Telegram
                 </a>
                 <a
-                  className="social"
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://vk.com"
@@ -108,7 +133,10 @@ function Contacts() {
                   Instagram
                 </a>
                 <a
-                  className="social"
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="tel:+79510827471"
@@ -117,7 +145,10 @@ function Contacts() {
                   +7-951-082-74-71
                 </a>
                 <a
-                  className="social"
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   href="mailto:ttk@ttk.ru"

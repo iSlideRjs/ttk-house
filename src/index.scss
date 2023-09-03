@@ -143,15 +143,27 @@ input {
 
 .social {
   text-decoration: none;
-  color: #a7a7a7;
   margin: 2px;
+  &-light {
+    color: #4e4e4e;
+    &:hover {
+      color: #000000;
+    }
+  }
+  &-dark {
+    color: #a7a7a7;
+    &:hover {
+      color: #ffffff;
+    }
+  }
   &:hover {
-    color: #ffffff;
-    border-right: 1px solid #db9c12;
+    border-right: 2px solid #db9c12;
   }
 }
 
 .headerMenu {
+  display: flex;
+  justify-content: center;
   position: relative;
   width: 95%;
   margin: 0 auto;
@@ -182,8 +194,4 @@ input {
   padding: 10px 0 10px 0;
   background-color: #323c49;
   color: #ffffff;
-}
-
-.sidebarTouch {
-  position: absolute;
 }

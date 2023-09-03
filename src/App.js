@@ -25,7 +25,7 @@ function App() {
         <Header theme={theme} changeTheme={changeTheme} />
         <Slider />
         <Body />
-        <Contacts />
+        <Contacts theme={theme} />
         <Footer />
       </Container>
     </div>

@@ -2,10 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import house from '../icon/house.svg';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import { useState } from 'react';
 import sidebar from '../icon/sidebar.svg';
 import phone from '../icon/phone.svg';
+import { Sidebar } from '../components/Sidebar';
+import { useState } from 'react';
 
 function Header({ changeTheme, theme }) {
   const [show, setShow] = useState(false);
@@ -19,7 +19,6 @@ function Header({ changeTheme, theme }) {
       handleClose();
     }
   };
-
   return (
     <div className="headShadow">
       <Navbar className="head bg-warning bg-gradient">
@@ -57,42 +56,13 @@ function Header({ changeTheme, theme }) {
             onClick={handleShow}
             className="me-1 sidebar"
           />
-
-          <Offcanvas
-            placement="bottom"
-            className="rounded-top-4"
+          <Sidebar
+            theme={theme}
+            changeTheme={changeTheme}
             show={show}
-            onHide={handleClose}
-          >
-            <Offcanvas.Header
-              onTouchMove={handleTouchMove}
-              className="border-bottom headerMenu"
-              closeButton
-            >
-              <Offcanvas.Title>Меню</Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body className="mt-3">
-              Смена темы:{' '}
-              <label id="switch" className="switch">
-                <input
-                  type="checkbox"
-                  onChange={changeTheme}
-                  id="slider"
-                  checked={theme === 'light'}
-                />
-                <span class="slider round"></span>
-              </label>
-              <br /> <br />
-              <img
-                className="me-2"
-                src={phone}
-                alt="phone"
-                width="25px"
-                height="25px"
-              />
-              <span className="">Контакты</span>
-            </Offcanvas.Body>
-          </Offcanvas>
+            handleClose={handleClose}
+            handleTouchMove={handleTouchMove}
+          />
         </Container>
       </Navbar>
     </div>
