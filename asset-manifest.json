@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ttk-house/static/css/main.be5f067b.css",
-    "main.js": "/ttk-house/static/js/main.4cfb3b82.js",
+    "main.css": "/ttk-house/static/css/main.9482d968.css",
+    "main.js": "/ttk-house/static/js/main.fe7f601d.js",
     "static/media/house.svg": "/ttk-house/static/media/house.f6789b76ab06b9b53f060218b779c343.svg",
     "static/media/phone2.svg": "/ttk-house/static/media/phone2.747e88062bb1fdc7e5cc71d288ffb747.svg",
     "static/media/vk.svg": "/ttk-house/static/media/vk.956f9d66a93e8f42844f2ece1be8824b.svg",
@@ -11,11 +11,11 @@
     "static/media/mail.svg": "/ttk-house/static/media/mail.24d7fa400639a6e47eb566f2dccdbe78.svg",
     "index.html": "/ttk-house/index.html",
     "static/media/sidebar.svg": "/ttk-house/static/media/sidebar.93e21d9adcd257686f7c18fd4f6c487f.svg",
-    "main.be5f067b.css.map": "/ttk-house/static/css/main.be5f067b.css.map",
-    "main.4cfb3b82.js.map": "/ttk-house/static/js/main.4cfb3b82.js.map"
+    "main.9482d968.css.map": "/ttk-house/static/css/main.9482d968.css.map",
+    "main.fe7f601d.js.map": "/ttk-house/static/js/main.fe7f601d.js.map"
   },
   "entrypoints": [
-    "static/css/main.be5f067b.css",
-    "static/js/main.4cfb3b82.js"
+    "static/css/main.9482d968.css",
+    "static/js/main.fe7f601d.js"
   ]
 }
