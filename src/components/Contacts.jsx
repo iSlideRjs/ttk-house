@@ -7,6 +7,7 @@ import vk from '../icon/vk.svg';
 import phone2 from '../icon/phone2.svg';
 import mail from '../icon/mail.svg';
 import classNames from 'classnames';
+import avito from '../icon/avito.png';
 
 function Contacts({ theme }) {
   return (
@@ -82,6 +83,18 @@ function Contacts({ theme }) {
                   <img src={mail} alt="phone" width="20px" height="20px" />{' '}
                   ttk@ttk.ru
                 </a>
+                <a
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://avito.ru"
+                >
+                  <img src={avito} alt="phone" width="20px" height="20px" />{' '}
+                  Avito
+                </a>
               </Nav>
             </Card.Text>
           </Card.Body>
@@ -155,6 +168,18 @@ function Contacts({ theme }) {
                 >
                   <img src={mail} alt="phone" width="20px" height="20px" />{' '}
                   ttk@ttk.ru
+                </a>
+                <a
+                  className={classNames('social', {
+                    'social-light': theme === 'light',
+                    'social-dark': theme === 'dark',
+                  })}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://avito.ru"
+                >
+                  <img src={avito} alt="phone" width="20px" height="20px" />{' '}
+                  Avito
                 </a>
               </Nav>
             </Card.Text>

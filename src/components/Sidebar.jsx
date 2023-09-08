@@ -1,5 +1,6 @@
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import phone from '../icon/phone.svg';
+import classNames from 'classnames';
 
 function Sidebar({ changeTheme, theme, show, handleClose, handleTouchMove }) {
   return (
@@ -11,7 +12,10 @@ function Sidebar({ changeTheme, theme, show, handleClose, handleTouchMove }) {
     >
       <Offcanvas.Header
         onTouchMove={handleTouchMove}
-        className="border-bottom headerMenu"
+        className={classNames('border-bottom headerMenu', {
+          headerMenuLight: theme === 'light',
+          headerMenuDark: theme === 'dark',
+        })}
       >
         <Offcanvas.Title>Меню</Offcanvas.Title>
       </Offcanvas.Header>
