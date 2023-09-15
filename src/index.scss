@@ -165,9 +165,8 @@ input {
   display: flex;
   justify-content: center;
   position: relative;
-  width: 92.5%;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   padding-top: 20px;
   &::before {
     content: '';
@@ -212,4 +211,8 @@ input {
     margin-right: 10px;
     color: #ffffff;
   }
+}
+
+.offcanvasStyle {
+  min-height: 50%;
 }

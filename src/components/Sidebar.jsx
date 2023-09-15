@@ -10,13 +10,13 @@ function Sidebar({ changeTheme, theme, show, handleClose, handleTouchMove }) {
   return (
     <Offcanvas
       placement="bottom"
-      className="rounded-top-4"
+      className="rounded-top-4 offcanvasStyle"
       show={show}
       onHide={handleClose}
     >
       <Offcanvas.Header
         onTouchMove={handleTouchMove}
-        className={classNames('border-bottom headerMenu', {
+        className={classNames(' headerMenu', {
           headerMenuLight: theme === 'light',
           headerMenuDark: theme === 'dark',
         })}
@@ -25,9 +25,9 @@ function Sidebar({ changeTheme, theme, show, handleClose, handleTouchMove }) {
       </Offcanvas.Header>
       <Offcanvas.Body>
         <ListGroup className="list-group-flush">
-          <ListGroup.Item>
+          <ListGroup.Item className="border-top">
             {' '}
-            <Nav className="flex-column mb-4">
+            <Nav className="flex-column mb-3 mt-2">
               <a
                 className={classNames('social', {
                   'social-light': theme === 'light',

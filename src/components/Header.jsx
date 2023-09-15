@@ -15,7 +15,7 @@ function Header({ changeTheme, theme }) {
     const { clientY } = event.touches[0];
     const screenHeight = window.innerHeight;
 
-    if (clientY > screenHeight * 0.8) {
+    if (clientY > screenHeight * 0.6) {
       handleClose();
     }
   };
