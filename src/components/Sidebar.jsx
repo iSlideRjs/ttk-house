@@ -106,9 +106,10 @@ function Sidebar({ changeTheme, theme, show, handleClose, handleTouchMove }) {
               </a>{' '}
             </Nav>{' '}
           </ListGroup.Item>
-          <ListGroup.Item className="mt-3">
-            Смена темы:{' '}
-            <label id="switch" className="switch">
+          <ListGroup.Item className="mt-3 d-flex align-items-center justify-content-center">
+            {' '}
+            Cмена темы
+            <label id="switch" className="switch ms-2">
               <input
                 type="checkbox"
                 onChange={changeTheme}
