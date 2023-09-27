@@ -9,23 +9,24 @@ import { useEffect } from 'react';
 import { Footer } from './components/Footer';
 
 function App() {
-  const [theme, setTheme] = useState('dark');
-  let darkThemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+  // let darkThemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
   const changeTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
-  useEffect(() => {
-    if (darkThemeMediaQuery.matches) {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (darkThemeMediaQuery.matches) {
+  //     setTheme('dark');
+  //   } else {
+  //     setTheme('light');
+  //   }
+  // }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-bs-theme', theme);
+    localStorage.setItem('theme', theme);
   }, [theme]);
 
   return (
