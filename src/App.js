@@ -9,7 +9,8 @@ import { useEffect } from 'react';
 import { Footer } from './components/Footer';
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+  let CacheTheme = localStorage.getItem('theme');
+  const [theme, setTheme] = useState(CacheTheme || 'dark');
   // let darkThemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
   const changeTheme = () => {

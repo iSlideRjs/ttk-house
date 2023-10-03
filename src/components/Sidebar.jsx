@@ -8,8 +8,11 @@ import vk from '../icon/vk.svg';
 import phone2 from '../icon/phone2.svg';
 import mail from '../icon/mail.svg';
 import avito from '../icon/avito.png';
+import ToggleButton from 'react-bootstrap/ToggleButton';
+import { useState } from 'react';
 
 function Sidebar({ changeTheme, theme, show, handleClose, handleTouchMove }) {
+  const [checked, setChecked] = useState(false);
   return (
     <Offcanvas
       placement="bottom"
@@ -119,6 +122,17 @@ function Sidebar({ changeTheme, theme, show, handleClose, handleTouchMove }) {
               <span class="slider round"></span>
             </label>
           </ListGroup.Item>
+          <br />
+          <ToggleButton
+            id="toggle-check"
+            type="checkbox"
+            variant="secondary"
+            checked={checked}
+            value="1"
+            onChange={(e) => setChecked(e.currentTarget.checked)}
+          >
+            Auto-change theme off
+          </ToggleButton>
         </ListGroup>
       </Offcanvas.Body>
     </Offcanvas>
